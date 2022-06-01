@@ -1,0 +1,9 @@
+2022-05-26T15:11:16+00:00 CRITICAL Uncaught RuntimeException: Impossible de demander des actions. Erreur de la base de données. in C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\packages\action-scheduler\classes\data-stores\ActionScheduler_DBStore.php:683
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\packages\action-scheduler\classes\data-stores\ActionScheduler_DBStore.php(597): ActionScheduler_DBStore->claim_actions(0, 25, NULL, Array, '')
+#1 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_QueueRunner.php(153): ActionScheduler_DBStore->stake_claim(25)
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_QueueRunner.php(132): ActionScheduler_QueueRunner->do_batch(25, 'WP Cron')
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(307): ActionScheduler_QueueRunner->run('WP Cron')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#5 C:\xamp dans C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\packages\action-scheduler\classes\data-stores\ActionScheduler_DBStore.php à la ligne 683
+
